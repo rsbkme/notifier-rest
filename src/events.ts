@@ -21,7 +21,8 @@ export type ServerEvents = {
   readonly 'elrond:bridge_tx': (
     tx_hash: string,
     sender: string,
-    uris: string[]
+    uris: string[],
+    actionId: string
   ) => void;
 };
 
